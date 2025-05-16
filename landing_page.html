@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuka Apel Sehat - Produk Alami untuk Kesehatan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                        url('placeholder-bg.jpg') center/cover no-repeat;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .benefit-item:hover .benefit-icon {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="/Users/erwinqodariyah/iCloud Drive (Archive) - 1/Documents/Documents/SEMESTER 4/Programmer Web/Buat Landing Page/Gambar cuka apel/logo cuka apel.png" alt="Cuka Apel Sehat Logo" class="h-10 mr-2">
+                <span class="text-xl font-bold text-emerald-700">Cuka Apel Sehat</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-emerald-800 font-medium hover:text-emerald-600">Beranda</a>
+                <a href="#about" class="text-gray-600 hover:text-emerald-600">Tentang Produk</a>
+                <a href="#benefits" class="text-gray-600 hover:text-emerald-600">Manfaat</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-emerald-600">Testimoni</a>
+                <a href="#pricing" class="text-gray-600 hover:text-emerald-600">Harga</a>
+                <a href="#faq" class="text-gray-600 hover:text-emerald-600">FAQ</a>
+            </nav>
+            
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-emerald-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-4 py-2 flex flex-col gap-3">
+                <a href="#home" class="text-emerald-800 font-medium">Beranda</a>
+                <a href="#about" class="text-gray-600">Tentang Produk</a>
+                <a href="#benefits" class="text-gray-600">Manfaat</a>
+                <a href="#testimonials" class="text-gray-600">Testimoni</a>
+                <a href="#pricing" class="text-gray-600">Harga</a>
+                <a href="#faq" class="text-gray-600">FAQ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-bold text-emerald-800 mb-4">Cuka Apel Sehat Alami</h1>
+                <p class="text-lg text-gray-700 mb-6">Dibuat dari 100% apel organik pilihan tanpa bahan pengawet, memberikan manfaat optimal untuk kesehatan pencernaan, detoksifikasi, dan penurunan berat badan.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#pricing" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300">Beli Sekarang</a>
+                    <a href="#about" class="border border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-medium py-3 px-6 rounded-lg text-center transition duration-300">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="/Users/erwinqodariyah/iCloud Drive (Archive) - 1/Documents/Documents/SEMESTER 4/Programmer Web/Buat Landing Page/Gambar cuka apel/botol cuka apel.png" alt="Botol Cuka Apel Sehat" class="w-full max-w-md h-auto rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section id="about" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-emerald-800 mb-4">Tentang Cuka Apel Sehat</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Produk lokal berkualitas tinggi yang dibuat dengan proses fermentasi alami untuk menjaga kandungan nutrisinya</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2">
+                    <img src="/Users/erwinqodariyah/iCloud Drive (Archive) - 1/Documents/Documents/SEMESTER 4/Programmer Web/Buat Landing Page/Gambar cuka apel/proses cuka apel.png" alt="Proses Pembuatan Cuka Apel" class="w-full rounded-lg shadow-md">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Kenapa Memilih Cuka Apel Kami?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="bg-emerald-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-emerald-600"></i>
+                            </div>
+                            <span class="text-gray-700">Dibuat dari apel organik segar tanpa pestisida</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-emerald-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-emerald-600"></i>
+                            </div>
+                            <span class="text-gray-700">Proses fermentasi alami selama 3-6 bulan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-emerald-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-emerald-600"></i>
+                            </div>
+                            <span class="text-gray-700">Tanpa tambahan gula, pengawet, atau bahan kimia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-emerald-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-emerald-600"></i>
+                            </div>
+                            <span class="text-gray-700">Mempertahankan 'mother of vinegar' yang kaya enzim</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-emerald-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-emerald-600"></i>
+                            </div>
+                            <span class="text-gray-700">Dikemas dalam botol kaca untuk menjaga kualitas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits Section -->
+    <section id="benefits" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-emerald-800 mb-4">Manfaat Cuka Apel Sehat</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kandungan alami dalam cuka apel kami memberikan berbagai manfaat untuk kesehatan tubuh Anda</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="benefit-item bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="benefit-icon bg-emerald-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 text-emerald-600 text-2xl">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">Kesehatan Jantung</h3>
+                    <p class="text-gray-600">Membantu menurunkan kadar kolesterol dan tekanan darah, mengurangi risiko penyakit kardiovaskular.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-item bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="benefit-icon bg-emerald-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 text-emerald-600 text-2xl">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">Manajemen Berat Badan</h3>
+                    <p class="text-gray-600">Meningkatkan rasa kenyang, memperlambat pengosongan lambung, dan membantu pembakaran lemak.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-item bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="benefit-icon bg-emerald-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 text-emerald-600 text-2xl">
+                        <i class="fas fa-bacteria"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">Kesehatan Pencernaan</h3>
+                    <p class="text-gray-600">Mengandung probiotik yang mendukung kesehatan usus dan meningkatkan penyerapan nutrisi.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="benefit-item bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="benefit-icon bg-emerald-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 text-emerald-600 text-2xl">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">Sistem Kekebalan</h3>
+                    <p class="text-gray-600">Mengandung antioksidan yang membantu melawan radikal bebas dan meningkatkan sistem imun.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="benefit-item bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="benefit-icon bg-emerald-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 text-emerald-600 text-2xl">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">Energi & Metabolisme</h3>
+                    <p class="text-gray-600">Membantu penyerapan mineral penting seperti kalsium dan zat besi, meningkatkan tingkat energi.</p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="benefit-item bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="benefit-icon bg-emerald-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 text-emerald-600 text-2xl">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-2">Kontrol Gula Darah</h3>
+                    <p class="text-gray-600">Meningkatkan sensitivitas insulin dan membantu mengontrol kadar gula darah setelah makan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiator Section -->
+    <section class="py-16 bg-stone-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-emerald-800 mb-4">Keunggulan Cuka Apel Sehat</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Apa yang membuat produk kami berbeda dengan produk lainnya?</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-emerald-100 rounded-full opacity-70"></div>
+                        <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-amber-100 rounded-full opacity-70"></div>
+                        <div class="relative bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-semibold text-emerald-700 mb-4">Perbedaan Utama</h3>
+                            <p class="text-gray-700 mb-4">Banyak produk cuka apel di pasaran yang menggunakan proses instan dan bahan tambahan yang mengurangi kualitas akhir produk.</p>
+                            <p class="text-gray-700 mb-2"><span class="font-medium text-emerald-700">Cuka Apel Sehat</span> mempertahankan metode tradisional dengan:</p>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Fermentasi alami 100% tanpa tambahan ragi kimia</li>
+                                <li>Tidak disaring atau dipasteurisasi, mempertahankan semua enzim bermanfaat</li>
+                                <li>Penggunaan apel organik lokal yang ditanam secara berkelanjutan</li>
+                                <li>Tanpa proses penyulingan yang menghilangkan nutrisi</li>
+                                <li>Kandungan asam asetat yang optimal (5-6%)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex flex-col gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-leaf text-emerald-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-emerald-700">Organik & Alami</h3>
+                        </div>
+                        <p class="text-gray-600">Dapatkan sertifikat organik dari lembaga terakreditasi, bebas dari bahan kimia sintetik.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-flask text-emerald-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-emerald-700">Mother of Vinegar</h3>
+                        </div>
+                        <p class="text-gray-600">Masih mengandung "mother" yaitu strand selulosa dan bakteri asetat yang kaya enzim dan protein.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-emerald-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-medal text-emerald-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-emerald-700">Kualitas Premium</h3>
+                        </div>
+                        <p class="text-gray-600">Setiap batch diuji di laboratorium untuk memastikan standar kualitas dan keamanan tertinggi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-emerald-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-emerald-800 mb-4">Testimoni Pelanggan</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Apa kata mereka yang sudah mencoba Cuka Apel Sehat</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 mr-4">
+                            <img src="/Users/erwinqodariyah/iCloud Drive (Archive) - 1/Documents/Documents/SEMESTER 4/Programmer Web/Buat Landing Page/Gambar customer/profil ani.png" alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ibu Ani, 42 tahun</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Setelah 3 bulan rutin minum, asam urat saya membaik drastis dan berat badan turun 5kg tanpa diet ketat. Rasanya lebih enak dibanding merek lain."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 mr-4">
+                            <img src="/Users/erwinqodariyah/iCloud Drive (Archive) - 1/Documents/Documents/SEMESTER 4/Programmer Web/Buat Landing Page/Gambar customer/profil budi.png" alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Budi Setiawan, 38 tahun</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Saya penderita maag khawatir konsumsi cuka apel, tapi produk ini justru membantu pencernaan saya. Sekarang saya rutin minum setiap pagi."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 mr-4">
+                            <img src="/Users/erwinqodariyah/iCloud Drive (Archive) - 1/Documents/Documents/SEMESTER 4/Programmer Web/Buat Landing Page/Gambar customer/profil dewi.png" alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Dewi Lestari, 50 tahun</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Gula darah saya lebih stabil, dari 250 turun ke 150-170 dalam 2 bulan pemakaian. Dokter kaget dengan perkembangan saya. Terima kasih Cuka Apel Sehat!"</p>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <button class="border border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-medium py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                    <span>Lihat Lebih Banyak Testimoni</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-emerald-800 mb-4">Pilihan Paket</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Pilih paket sesuai kebutuhan Anda dengan harga terbaik</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Package 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-emerald-200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-emerald-700 mb-2">Paket Percobaan</h3>
+                        <p class="text-gray-600 mb-4">Coba dulu kualitas produk kami</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-emerald-700">Rp 45.000</span>
+                            <span class="text-gray-500 ml-1">/botol</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">1 Botol 250ml</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Cukup untuk 2 minggu pemakaian</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Buku panduan penggunaan</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg transition duration-300">Pilih Paket Ini</button>
+                    </div>
+                </div>
+
+                <!-- Package 2 (Recommended) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-emerald-400 transform scale-105 z-10">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-emerald-700">Paket Hemat</h3>
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded">Paling Populer</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Pilihan terbaik untuk pemakaian 1 bulan</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-emerald-700">Rp 120.000</span>
+                            <span class="text-gray-500 ml-1">/3 botol</span>
+                            <div class="text-sm text-green-600 mt-1">Hemat Rp 15.000</div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">3 Botol 250ml</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Cukup untuk 6 minggu pemakaian</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Buku panduan lengkap</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Resep sehat gratis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Gratis ongkir seluruh Indonesia</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg transition duration-300">Pilih Paket Ini</button>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-emerald-200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-emerald-700 mb-2">Paket Keluarga</h3>
+                        <p class="text-gray-600 mb-4">Ekonomis untuk pemakaian jangka panjang</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-emerald-700">Rp 210.000</span>
+                            <span class="text-gray-500 ml-1">/6 botol</span>
+                            <div class="text-sm text-green-600 mt-1">Hemat Rp 60.000</div>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">6 Botol 250ml</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Cukup untuk 3 bulan pemakaian</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Buku panduan premium</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Resep eksklusif</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Gratis ongkir + bonus botol kaca</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Konsultasi gratis via WhatsApp</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg transition duration-300">Pilih Paket Ini</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-stone-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-emerald-800 mb-4">Pertanyaan Umum</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Temukan jawaban untuk pertanyaan yang sering diajukan</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- Question 1 -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-medium text-gray-800 focus:outline-none">
+                        <span>Bagaimana cara mengonsumsi cuka apel yang benar?</span>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-3 text-gray-600">
+                        <p>Cuka apel sebaiknya dikonsumsi dengan dilarutkan dalam air (1-2 sendok makan per 250ml air) dan diminum sebelum makan. Bisa ditambahkan madu atau perasan lemon untuk rasa. Hindari konsumsi langsung karena bisa merusak enamel gigi.</p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-medium text-gray-800 focus:outline-none">
+                        <span>Apakah ada efek samping mengonsumsi cuka apel?</span>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-3 text-gray-600">
+                        <p>Dalam dosis wajar, cuka apel umumnya aman. Namun bagi penderita maag atau asam lambung disarankan konsultasi dulu ke dokter. Efek samping yang mungkin terjadi jika berlebihan antara lain gangguan pencernaan ringan atau erosi email gigi jika dikonsumsi langsung.</p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-medium text-gray-800 focus:outline-none">
+                        <span>Berapa lama cuka apel ini bisa bertahan?</span>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-3 text-gray-600">
+                        <p>Dalam kemasan yang belum dibuka, cuka apel bisa bertahan hingga 5 tahun di tempat sejuk dan kering. Setelah dibuka, disarankan digunakan dalam 6-12 bulan dan selalu ditutup rapat setelah digunakan. "Mother" mungkin terus tumbuh, itu tanda produk masih hidup dan aktif.</p>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-medium text-gray-800 focus:outline-none">
+                        <span>Apa yang dimaksud dengan "mother" dalam cuka apel?</span>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-3 text-gray-600">
+                        <p>"Mother" adalah koloni bakteri menguntungkan dan enzim yang terbentuk selama fermentasi, terlihat seperti serat atau gumpalan keruh di dasar botol. Ini tanda produk alami dan kualitas tinggi. Banyak produk komersial menghilangkannya melalui filtrasi dan pasteurisasi, padahal ini adalah bagian paling bergizi dari cuka apel.</p>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-200">
+                    <button class="faq-question flex justify-between items-center w-full text-left font-medium text-gray-800 focus:outline-none">
+                        <span>Bagaimana cara penyimpanan yang tepat?</span>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-3 text-gray-600">
+                        <p>Simpan botol di tempat sejuk dan kering, hindarkan dari sinar matahari langsung. Tidak perlu disimpan di kulkas. Pastikan tutup botol selalu rapat setelah digunakan untuk menjaga kualitas. Jika ada "mother", disarankan tidak disaring karena terus membantu menjaga kualitas cuka.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-emerald-700 to-emerald-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Siap Merasakan Manfaat Cuka Apel Sehat?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Mulai perjalanan kesehatan alami Anda hari ini. Pilih paket sesuai kebutuhan dan nikmati berbagai keuntungan khusus untuk Anda.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#pricing" class="bg-white hover:bg-gray-100 text-emerald-800 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-shopping-cart mr-3"></i>
+                    <span>Pesan Sekarang</span>
+                </a>
+                <a href="#" class="border border-white hover:bg-white hover:text-emerald-800 font-medium py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-comments mr-3"></i>
+                    <span>Konsultasi Gratis</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Footer Column 1 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="logo-placeholder.png" alt="Logo" class="h-8 mr-2">
+                        <span class="text-xl font-bold text-white">Cuka Apel Sehat</span>
+                    </div>
+                    <p class="mb-4">Produk alami premium untuk kesehatan keluarga Indonesia.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Footer Column 2 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-white transition duration-300">Beranda</a></li>
+                        <li><a href="#about" class="hover:text-white transition duration-300">Tentang Produk</a></li>
+                        <li><a href="#benefits" class="hover:text-white transition duration-300">Manfaat</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition duration-300">Testimoni</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition duration-300">Harga</a></li>
+                        <li><a href="#faq" class="hover:text-white transition duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 3 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Kontak Kami</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-emerald-400"></i>
+                            <span>Jl. Apel Sehat No. 123, Kota Buah, Jawa Barat, Indonesia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-emerald-400"></i>
+                            <span>+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-emerald-400"></i>
+                            <span>info@cukaapelsehat.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-3 text-emerald-400"></i>
+                            <span>Senin-Sabtu: 08.00-17.00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 4 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Pembayaran</h3>
+                    <p class="mb-4">Kami menerima pembayaran melalui:</p>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-visa text-2xl"></i>
+                        </div>
+                        <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-mastercard text-2xl"></i>
+                        </div>
+                        <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
+                            <i class="fas fa-university text-xl"></i>
+                        </div>
+                        <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
+                            <i class="fab fa-gopuram text-xl"></i>
+                        </div>
+                        <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
+                            <i class="fas fa-qrcode text-xl"></i>
+                        </div>
+                        <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
+                            <i class="fas fa-wallet text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Cuka Apel Sehat. Hak Cipta Dilindungi.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-sm hover:text-white transition duration-300">Kebijakan Privasi</a>
+                    <a href="#" class="text-sm hover:text-white transition duration-300">Syarat & Ketentuan</a>
+                    <a href="#" class="text-sm hover:text-white transition duration-300">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open answers
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    if (q !== question) {
+                        q.nextElementSibling.classList.add('hidden');
+                        q.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
